@@ -32,7 +32,7 @@ class Config:
 
     DEFAULT_CONFIG = {
         "local_currency": "GBP",
-        "local_timezone": "Europe/London",
+        "local_timezone": "Europe/Oslo",
         "date_is_day_first": True,
         "fiat_list": FIAT_LIST,
         "crypto_list": CRYPTO_LIST,
@@ -58,8 +58,8 @@ class Config:
 
     def __init__(self) -> None:
         self.debug = False
-        self.start_of_year_month = 4
-        self.start_of_year_day = 6
+        self.start_of_year_month = 1
+        self.start_of_year_day = 1
 
         if not os.path.exists(BITTYTAX_PATH):
             os.mkdir(BITTYTAX_PATH)
